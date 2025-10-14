@@ -8,6 +8,7 @@ interface Constants {
     IMAGE_NOT_FOUND: string;
     RESUME_URL: string;
     MAINTENANCE_URL: string;
+    CONTACT_EMAIL: string;
     };
 interface CardDetails {
     VILLA_ORIGINALS: {
@@ -35,6 +36,7 @@ export const constants: Constants = {
     IMAGE_NOT_FOUND: "https://g5gi6ozjbngbtteo.public.blob.vercel-storage.com/placeholder.png",
     RESUME_URL: "https://g5gi6ozjbngbtteo.public.blob.vercel-storage.com/dan_winslow.pdf",
     MAINTENANCE_URL: "https://g5gi6ozjbngbtteo.public.blob.vercel-storage.com/maintenance.png",
+    CONTACT_EMAIL: "mailto:dan@danwinslow.dev"
 }
 
 export const card_details: CardDetails = {

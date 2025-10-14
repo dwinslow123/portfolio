@@ -11,6 +11,9 @@ const About = () => {
                 <div className="text-lg font-medium text-gray-600 w-full sm:w-7/12">
                     I&apos;m Dan Winslow, a seasoned JavaScript Developer based in Chicago, Illinois. With a passion for crafting efficient and scalable web applications, I specialize in React, Node.js, and modern front-end technologies. When I&apos;m not coding, I enjoy blogging about tech trends and exploring new programming languages.
                 </div>
+                <Link href={constants.CONTACT_EMAIL} className="text-lg font-medium text-blue-600 hover:underline">
+                    Get in Touch &rarr;
+                </Link>
                 <Link href={constants.RESUME_URL} target="_blank" rel="noopener noreferrer" className="text-lg font-medium text-blue-600 hover:underline">
                     View my Resume &rarr;
                 </Link>
