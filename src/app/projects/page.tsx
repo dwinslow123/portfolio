@@ -1,4 +1,4 @@
-import CardList from "../components/CardList";
+import CardList from "../components/cardList";
 import { card_details } from "@/constants";
 const Projects = () => {
     const projectDetails = [card_details.VILLA_ORIGINALS, card_details.DEFAULT_CARD, card_details.DEFAULT_CARD, card_details.DEFAULT_CARD, card_details.DEFAULT_CARD, card_details.DEFAULT_CARD];
