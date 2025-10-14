@@ -10,7 +10,7 @@ const Home = () => {
         <h1 className="text-4xl sm:text-5xl font-extrabold text-left">
           Dan Winslow
         </h1>
-        <div className="text-lg font-medium sm:text-2xl text-gray-600 sm:text-left w-full sm:w-7/12">Hi. I'm an experienced JavaScript Developer based in Chicago, Illinois.</div>
+        <div className="text-lg font-medium sm:text-2xl text-gray-600 sm:text-left w-full sm:w-7/12">Hi. I&apos;m an experienced JavaScript Developer based in Chicago, Illinois.</div>
         <Link href={constants.ABOUT_URL} className="text-lg font-medium text-blue-600 hover:underline">
           Learn more about me &rarr;
         </Link>
@@ -19,17 +19,14 @@ const Home = () => {
       <section className="row-start-3 flex flex-col gap-8 sm:gap-16 w-full max-w-3xl mx-auto">
         <div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-            <Card title="Project 1" description="description" imageUrl="test.com" link="testlink.com" githubUrl={constants.GITHUB_URL} />
-            <Card title="Project 2" description="description" imageUrl="test.com" link="testlink.com" githubUrl={constants.GITHUB_URL} />
-            <Card title="Project 3" description="description" imageUrl="test.com" link="testlink.com" githubUrl={constants.GITHUB_URL} />
+            <Card title="Tailwind CSS Card" description="Simple Tailwind CSS card component" imageUrl={constants.IMAGE_NOT_FOUND} link="testlink.com" githubUrl={constants.GITHUB_URL} />
+            <Card title="Project 2" description="description" imageUrl={constants.IMAGE_NOT_FOUND} link="testlink.com" githubUrl={constants.GITHUB_URL} />
+            <Card title="Project 3" description="description" imageUrl={constants.IMAGE_NOT_FOUND} link="testlink.com" githubUrl={constants.GITHUB_URL} />
           </div>
           <div className="text-center mt-8">
           </div>
         </div>
       </section>
-      <footer className="row-start-4 flex gap-[24px] flex-wrap items-center justify-center">
-        I am the footer.
-      </footer>
     </div>
   );
 }
