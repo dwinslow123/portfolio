@@ -13,7 +13,7 @@ const Nav = () => {
     ];
 
     return (
-        <div className="relative flex tab-group items-center justify-center w-full p-4 sm:p-8">
+        <div className="relative flex tab-group items-center justify-center w-full p-4 sm:p-8 row-start-1">
             <div className="border-solid border-1 border-gray-200 w-full"></div>
             <ul className="flex p-0.5 text-center relative rounded-full border-solid border-2 border-gray-200" role="tablist" aria-orientation="horizontal">
                 {links.map((link) => (

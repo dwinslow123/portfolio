@@ -5,12 +5,12 @@ import { constants } from "@/constants";
 
 const Home = () => {
   return (
-    <div className="font-sans w-full grid grid-rows-[7.5rem_3rem_1fr_10px] min-h-screen p-6 sm:p-12 gap-8 sm:gap-16">
-      <header className="flex flex-col sm:items-start row-start-1 gap-2 pl-15 md:pl-40 md:pr-25 w-full">
-        <h1 className="text-4xl sm:text-5xl font-extrabold text-left">
+    <div className="row-start-2 flex flex-col gap-8 sm:gap-16 w-full max-w-8xl mx-auto">
+      <header className="flex flex-col gap-4 sm:gap-6 w-full mx-auto pl-20 sm:pl-50">
+        <h1 className="text-4xl sm:text-5xl font-extrabold text-left w-full sm:w-7/12">
           Dan Winslow
         </h1>
-        <div className="text-lg font-medium sm:text-2xl text-gray-600 sm:text-left w-full sm:w-7/12">Hi. I&apos;m an experienced JavaScript Developer based in Chicago, Illinois.</div>
+        <div className="text-lg font-medium text-gray-600 w-full sm:w-7/12">Hi. I&apos;m an experienced JavaScript Developer based in Chicago, Illinois.</div>
         <Link href={constants.ABOUT_URL} className="text-lg font-medium text-blue-600 hover:underline">
           Learn more about me &rarr;
         </Link>
