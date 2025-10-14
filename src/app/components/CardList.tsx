@@ -1,5 +1,4 @@
 import Card from "./Card";
-import { constants } from "@/constants";
 
 /** A component to display a list of Card components */
 const CardList = ({ cardProps }: { cardProps: { TITLE: string; DESCRIPTION: string; CARD_IMAGE: string; URL: string; GITHUB_URL: string; }[] }) => {

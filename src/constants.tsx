@@ -7,6 +7,7 @@ interface Constants {
     GITHUB_URL: string;
     IMAGE_NOT_FOUND: string;
     RESUME_URL: string;
+    MAINTENANCE_URL: string;
     };
 interface CardDetails {
     VILLA_ORIGINALS: {
@@ -33,6 +34,7 @@ export const constants: Constants = {
     GITHUB_URL: "https://github.com/dwinslow123",
     IMAGE_NOT_FOUND: "https://g5gi6ozjbngbtteo.public.blob.vercel-storage.com/placeholder.png",
     RESUME_URL: "https://g5gi6ozjbngbtteo.public.blob.vercel-storage.com/dan_winslow.pdf",
+    MAINTENANCE_URL: "https://g5gi6ozjbngbtteo.public.blob.vercel-storage.com/maintenance.png",
 }
 
 export const card_details: CardDetails = {
