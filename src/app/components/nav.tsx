@@ -7,9 +7,10 @@ const Nav = () => {
     const pathname = usePathname();
     
     const links = [
-        { name: "Home", href: constants.HOME_URL },
+        { name: "DW", href: constants.HOME_URL },
+        { name: "Projects", href: constants.PROJECTS_URL },
+        { name: "Thoughts", href: constants.POSTS_URL },
         { name: "About", href: constants.ABOUT_URL },
-        { name: "Contact", href: constants.CONTACT_URL },
     ];
 
     return (
@@ -17,22 +18,22 @@ const Nav = () => {
             <div className="border-solid border-1 border-gray-200 w-full"></div>
             <ul className="flex p-0.5 text-center relative rounded-full border-solid border-2 border-gray-200" role="tablist" aria-orientation="horizontal">
                 {links.map((link) => (
-                    <li key={link.name} className="list-none">
+                    <li key={link.name} className="list-none pl-0.5 pr-0.5">
                         <Link
                             href={link.href}
                             className={`
                                 tab-item
                                 relative
                                 inline-block
-                                px-4
+                                px-3
                                 py-2
                                 rounded-full
-                                text-md
+                                text-sm
                                 font-medium
                                 transition-all
                                 ${
                                     pathname === link.href
-                                        ? "bg-gray-200 text-gray-900"
+                                        ? "bg-gray-900 text-white"
                                         : "text-gray-600 hover:bg-gray-100 hover:text-gray-900"
                                 }
                             `}
