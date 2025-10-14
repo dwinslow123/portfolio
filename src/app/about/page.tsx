@@ -4,7 +4,7 @@ import Link from "next/link";
 const About = () => {
     return (
         <div className="row-start-2 flex flex-col gap-8 sm:gap-16 w-full max-w-8xl mx-auto p-8">
-            <header className="flex flex-col gap-4 sm:gap-6 w-full mx-auto pl-20 sm:pl-50">
+            <header className="flex flex-col gap-4 sm:gap-6 w-full mx-auto md:pl-50">
                 <h1 className="text-4xl sm:text-5xl font-extrabold text-left w-full sm:w-7/12">
                     About Me
                 </h1>
