@@ -9,7 +9,7 @@ const About = () => {
                     About Me
                 </h1>
                 <div className="text-lg font-medium text-gray-600 w-full sm:w-7/12">
-                    I'm Dan Winslow, a seasoned JavaScript Developer based in Chicago, Illinois. With a passion for crafting efficient and scalable web applications, I specialize in React, Node.js, and modern front-end technologies. When I'm not coding, I enjoy blogging about tech trends and exploring new programming languages.
+                    I&apos;m Dan Winslow, a seasoned JavaScript Developer based in Chicago, Illinois. With a passion for crafting efficient and scalable web applications, I specialize in React, Node.js, and modern front-end technologies. When I&apos;m not coding, I enjoy blogging about tech trends and exploring new programming languages.
                 </div>
                 <Link href={constants.RESUME_URL} target="_blank" rel="noopener noreferrer" className="text-lg font-medium text-blue-600 hover:underline">
                     View my Resume &rarr;
@@ -38,7 +38,7 @@ const About = () => {
                 <div>
                     <h2 className="text-2xl sm:text-3xl font-bold mb-4">Education</h2>
                     <ul className="list-disc list-inside text-gray-700">
-                        <li>Bachelor's degree in Computer Science from XYZ University.</li>
+                        <li>First Cohort of Bloomtech Institute of Technology (formerly Lambda School)</li>
                         <li>Continuous learner, always exploring new technologies and frameworks.</li>
                     </ul>
                 </div>
