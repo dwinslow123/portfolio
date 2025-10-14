@@ -18,6 +18,13 @@ interface CardDetails {
         TITLE: string;
         DESCRIPTION: string;
     };
+    TAILWIND_CARD: {
+        URL: string;
+        GITHUB_URL: string;
+        CARD_IMAGE: string;
+        TITLE: string;
+        DESCRIPTION: string;
+    }
     DEFAULT_CARD: {
         URL: string;
         GITHUB_URL: string;
@@ -53,5 +60,12 @@ export const card_details: CardDetails = {
         CARD_IMAGE: "https://g5gi6ozjbngbtteo.public.blob.vercel-storage.com/placeholder.png",
         TITLE: "Project Title",
         DESCRIPTION: "Project to showcase skills!"
+    },
+    TAILWIND_CARD: {
+        URL: "https://codepen.io/Dwinslow123/pen/ogbGoWW",
+        GITHUB_URL: "https://github.com/dwinslow123/tailwind_card_component",
+        CARD_IMAGE: "https://g5gi6ozjbngbtteo.public.blob.vercel-storage.com/card_cover.png",
+        TITLE: "Tailwind CSS Card",
+        DESCRIPTION: "A card component built with Tailwind CSS"
     }
 }
