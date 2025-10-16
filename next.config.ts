@@ -17,6 +17,10 @@ const nextConfig: NextConfig = {
       }
     ],
   },
+  transpilePackages: [
+    "react-syntax-highlighter",
+    "ui",
+  ],
 };
 
 export default nextConfig;
