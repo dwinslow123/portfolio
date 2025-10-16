@@ -61,7 +61,7 @@ export const card_details: CardDetails = {
         GITHUB_URL: "https://github.com/dwinslow123",
         CARD_IMAGE: "https://g5gi6ozjbngbtteo.public.blob.vercel-storage.com/placeholder.png",
         TITLE: "Project Title",
-        DESCRIPTION: "Project to showcase skills!"
+        DESCRIPTION: "Placeholder Project"
     },
     TAILWIND_CARD: {
         URL: "https://codepen.io/Dwinslow123/pen/ogbGoWW",
