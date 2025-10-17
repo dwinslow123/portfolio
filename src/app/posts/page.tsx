@@ -1,10 +1,13 @@
 // import Image from "next/image";
 // import { constants } from "@/constants";
-import Posts from "../components/posts";
 
-const Posts = () => {
+import Posts from "../components/Posts";
+
+const PostsPage = () => {
     return (
-        <Posts />
+        <div className="row-start-2 flex flex-col gap-8 sm:gap-16 w-full max-w-3xl mx-auto p-8 justify-center items-center">
+            <Posts />
+        </div>
         
     //     <div className="row-start-2 flex flex-col gap-8 sm:gap-16 w-full max-w-3xl mx-auto p-8 justify-center items-center">
     //     <h1 className="text-2xl font-bold text-center mt-4">Page Under Maintenance</h1>
@@ -14,4 +17,4 @@ const Posts = () => {
     );
 }
 
-export default Posts;
+export default PostsPage;
