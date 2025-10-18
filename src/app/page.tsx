@@ -5,8 +5,6 @@ import { constants, card_details } from "@/app/lib/constants";
 
 const Home = () => {
 
-
-  const projectDetails = [card_details.VILLA_ORIGINALS, card_details.TAILWIND_CARD];
   return (
     <div className="row-start-2 flex flex-col gap-8 sm:gap-16 w-full max-w-8xl mx-auto p-8">
       <header className="flex flex-col gap-4 sm:gap-2 w-full mx-auto pl-20 sm:pl-50">

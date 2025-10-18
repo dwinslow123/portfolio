@@ -25,14 +25,15 @@ const getUser = async (email: string): Promise<User | null> => {
 export const { auth, signIn, signOut } = NextAuth({
   ...authConfig,
     providers: [Credentials({
+      /** eslint-disable-next-line */
       async authorize(credentials): Promise<any> {
         const parsedCredentials = z
           .object({ email: z.string().email(), password: z.string().min(6) })
           .safeParse(credentials);
           if (parsedCredentials.success) {
             const { email, password } = parsedCredentials.data;
+            /** eslint-disable-next-line */
             const user: any = await getUser(email);
-            console.log('User:', user);
             if (user) {
               const isPasswordValid = await bcrypt.compare(password, (user).password);
               if (isPasswordValid) {
