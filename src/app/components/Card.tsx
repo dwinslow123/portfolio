@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { card_details } from "@/constants";
+import { card_details } from "@/app/lib/constants";
 interface CardProps {
     title: string;
     description: string;

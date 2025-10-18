@@ -22,6 +22,9 @@ const nextConfig: NextConfig = {
     "react-syntax-highlighter",
     "ui",
   ],
+  experimental: {
+    authInterrupts: true,
+  },
   async redirects() {
     return [
       {

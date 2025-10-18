@@ -1,4 +1,4 @@
-import { card_details} from "@/constants"
+import { card_details} from "@/app/lib/constants"
 import CardList from "./CardList";
 
 /** A component to display a list of Project cards */

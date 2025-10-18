@@ -1,7 +1,7 @@
 'use client';
 import Link from "next/link";
 import ProjectsList from "./components/ProjectsList";
-import { constants, card_details } from "@/constants";
+import { constants, card_details } from "@/app/lib/constants";
 
 const Home = () => {
 

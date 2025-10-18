@@ -1,4 +1,4 @@
-import { constants } from "@/constants";
+import { constants } from "@/app/lib/constants";
 import Link from "next/link";
 
 const About = () => {
