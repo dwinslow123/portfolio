@@ -4,7 +4,7 @@ export type User = {
     firstName: string,
     lastName: string,
     isAdmin: boolean,
-    password_hash?: string,
+    password?: string,
 };
 
 export type Constants = {

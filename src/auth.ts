@@ -10,9 +10,9 @@ const sql = neon(`${process.env.DATABASE_URL}`);
 
 const getUser = async (email: string): Promise<User | null> => {
     const result = await sql<User[]>`
-      SELECT id, email, first_name AS "firstName", last_name AS "lastName", is_admin AS "isAdmin", password_hash
+      SELECT id, emailAddress, firstName, lastName, isAdmin, password
       FROM users
-      WHERE email = ${email}
+      WHERE emailAddress = ${email}
     `;
     
   try {
@@ -30,15 +30,14 @@ export const { auth, signIn, signOut } = NextAuth({
         const parsedCredentials = z
           .object({ email: z.string().email(), password: z.string().min(6) })
           .safeParse(credentials);
-
           if (parsedCredentials.success) {
             const { email, password } = parsedCredentials.data;
             const user = await getUser(email);
-
             if (user) {
-              const isPasswordValid = await bcrypt.compare(password, (user as any).password_hash);
+              const isPasswordValid = await bcrypt.compare(password, (user as any).password);
               if (isPasswordValid) {
-                const { password_hash, ...userWithoutPassword } = user;
+                const { password, ...userWithoutPassword } = user;
+                console.log('Authenticated user:', userWithoutPassword);
                 return userWithoutPassword;
               } else {
                 throw new Error('Invalid credentials');
