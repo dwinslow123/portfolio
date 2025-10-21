@@ -14,7 +14,7 @@ interface MarkdownCodeProps {
     className: string;
     children: React.ReactNode;
 }
-    
+
 const FullPost = async ({ id }: FullPostProps) => {
     const post = await findPostById(id);
 

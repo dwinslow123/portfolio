@@ -15,7 +15,7 @@ const MarkdownRenderer = ({ children: markdown }: MarkdownRendererProps) => {
           const match = /language-(\w+)/.exec(className || '');
 
           return !inline && match ? (
-            <SyntaxHighlighter style={dracula} PreTag="pre" language={match[1]} {...props}>
+            <SyntaxHighlighter style={dracula} PreTag="pre" language={match[ 1 ]} {...props}>
               {String(children).replace(/\n$/, '')}
             </SyntaxHighlighter>
           ) : (

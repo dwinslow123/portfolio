@@ -10,7 +10,7 @@ interface CardProps {
 /** A simple card component to display project information */
 const Card = ({ title = card_details.DEFAULT_CARD.TITLE, description = card_details.DEFAULT_CARD.DESCRIPTION, imageUrl = card_details.DEFAULT_CARD.CARD_IMAGE, link = card_details.DEFAULT_CARD.URL, githubUrl = card_details.DEFAULT_CARD.GITHUB_URL }: CardProps) => {
     return (
-        <div className="border border-gray-300 rounded-lg p-4 flex flex-col gap-4 w-full bg-white shadow-lg">
+        <div className="border border-gray-300 rounded-lg p-4 flex flex-col gap-4 w-full bg-white shadow-xl bottom-shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out">
             <div className="bg-gray-100 text-2xl font-bold p-3 rounded flex">
                 <p className="text-gray-800 w-full">{title}</p>
             </div>
