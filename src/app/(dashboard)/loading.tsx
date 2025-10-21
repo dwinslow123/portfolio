@@ -1,11 +1,9 @@
-import { unauthorized } from "next/navigation";
-
 const Loading = () => {
-  if (true) {
-    unauthorized();
-  } else {
-    return <div>Loading...</div>;
-  }
+  return (
+    <div className="w-full text-center">
+      <h2>Loading...</h2>
+    </div>
+  );
 };
 
 export default Loading;

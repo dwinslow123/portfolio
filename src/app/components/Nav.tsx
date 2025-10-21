@@ -4,8 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const Nav = () => {
-    const pathname = usePathname();
-    
+    const [, pathname] = usePathname().split("/");
     const links = [
         { name: "DW", href: constants.HOME_URL },
         { name: "Projects", href: constants.PROJECTS_URL },
@@ -32,14 +31,14 @@ const Nav = () => {
                                 font-medium
                                 transition-all
                                 ${
-                                    pathname === link.href
+                                    (link.href.includes(pathname) && pathname !== "") || (link.href === constants.HOME_URL && pathname === "")
                                         ? "bg-gray-900 text-white"
                                         : "text-gray-600 hover:bg-gray-100 hover:text-gray-900"
                                 }
                             `}
                             role="tab"
-                            aria-selected={pathname === link.href}
-                            tabIndex={pathname === link.href ? 0 : -1}
+                            aria-selected={pathname.includes(link.href) ? "true" : "false"}
+                            tabIndex={pathname.includes(link.href) ? 0 : -1}
                         >
                             {link.name}
                         </Link>

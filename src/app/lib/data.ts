@@ -1,13 +1,13 @@
 import { neon } from '@neondatabase/serverless';
 const sql = neon(`${process.env.DATABASE_URL}`);
 
-export const findAllPosts = async () => {
-    const posts = await sql`SELECT * FROM posts WHERE isDeleted = false`;
+export const findAllPosts: () => Promise<Record<string, any>[]> = async () => {
+    const posts = await sql`SELECT * FROM posts WHERE isDeleted = FALSE`;
     return posts;
 }
 
-export const findPostBySlug = async (slug: string) => {
-    const post = await sql`SELECT * FROM posts WHERE slug = ${slug}`;
+export const findPostById: (id: number) => Promise<Record<string, any>> = async (id: number) => {
+    const post = await sql`SELECT * FROM posts WHERE id = ${id} AND isDeleted = FALSE`;
     return post[0];
 }
 
@@ -22,5 +22,5 @@ export const updatePost = async (id: number, title: string, content: string, slu
 }
 
 export const deletePost = async (id: number) => {
-    await sql`DELETE FROM posts WHERE id = ${id}`;
+    await sql`UPDATE posts SET isDeleted = TRUE WHERE id = ${id}`;
 }

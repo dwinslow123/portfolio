@@ -1,5 +1,4 @@
 import type { NextConfig } from "next";
-import { redirect } from "next/navigation";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
@@ -22,18 +21,18 @@ const nextConfig: NextConfig = {
     "react-syntax-highlighter",
     "ui",
   ],
-  experimental: {
-    authInterrupts: true,
-  },
-  async redirects() {
-    return [
-      {
-        source: '/posts',
-        destination: '/maintenance',
-        permanent: false,
-      }
-    ]
-  }
+  // experimental: {
+  //   authInterrupts: true,
+  // },
+  // async redirects() {
+  //   return [
+  //     {
+  //       source: '/posts',
+  //       destination: '/maintenance',
+  //       permanent: false,
+  //     }
+  //   ]
+  // }
 };
 
 export default nextConfig;

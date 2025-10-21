@@ -20,3 +20,11 @@ export const authenticate = async (
     throw error;
   }
 }
+
+export const updateTimeStamp = async (date: string) => {
+  return new Date(date).toLocaleString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+}
