@@ -16,9 +16,9 @@ export const constants: Constants = {
 
 export const card_details: CardDetails = {
     VILLA_ORIGINALS: {
-        URL: "https://villaoriginals.com",
+        URL: "https://villa-originals-en7w.vercel.app/",
         GITHUB_URL: "https://github.com/dwinslow123/villaOriginals",
-        CARD_IMAGE: "https://g5gi6ozjbngbtteo.public.blob.vercel-storage.com/villaoriginals.com_.png",
+        CARD_IMAGE: "https://g5gi6ozjbngbtteo.public.blob.vercel-storage.com/villa_originals.png",
         TITLE: "Villa Originals",
         DESCRIPTION: "Site made for a local hair salon"
     },
