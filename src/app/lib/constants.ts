@@ -1,4 +1,4 @@
-import { CardDetails, Constants } from "@/app/lib/definitions";
+import { CardDetails, Constants } from "./definitions";
 
 export const constants: Constants = {
     HOME_URL: "/",
