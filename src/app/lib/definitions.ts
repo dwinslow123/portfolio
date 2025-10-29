@@ -10,7 +10,7 @@ export type User = {
 export type Constants = {
     HOME_URL: string;
     ABOUT_URL: string;
-    PROJECTS_URL: string;
+    WORKS_URL: string;
     CONTACT_URL: string;
     POSTS_URL: string;
     GITHUB_URL: string;
@@ -19,8 +19,8 @@ export type Constants = {
     MAINTENANCE_URL: string;
     CONTACT_EMAIL: string;
     PAGE_NOT_FOUND_IMAGE: string;
-    };
-export type CardDetails ={
+};
+export type CardDetails = {
     VILLA_ORIGINALS: {
         URL: string;
         GITHUB_URL: string;
@@ -34,7 +34,14 @@ export type CardDetails ={
         CARD_IMAGE: string;
         TITLE: string;
         DESCRIPTION: string;
-    }
+    };
+    CONTACT_FORM_CARD: {
+        URL: string;
+        GITHUB_URL: string;
+        CARD_IMAGE: string;
+        TITLE: string;
+        DESCRIPTION: string;
+    };
     DEFAULT_CARD: {
         URL: string;
         GITHUB_URL: string;

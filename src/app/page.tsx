@@ -18,6 +18,7 @@ const Home = () => {
       <div className="border-b-2 border-gray-200 row-start-2 w-full"></div>
       <section className="row-start-3 flex flex-col gap-8 sm:gap-16 w-full max-w-5xl mx-auto">
         <div>
+          <h2 className="text-2xl font-bold mb-4">My Works</h2>
           <ProjectsList />
           <div className="text-center mt-8">
           </div>

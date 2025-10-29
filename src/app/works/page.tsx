@@ -1,6 +1,6 @@
 import ProjectsList from "@/app/components/ProjectsList";
 
-const Projects = () => {
+const Works = () => {
     return (
         <div>
             <ProjectsList />
@@ -8,4 +8,4 @@ const Projects = () => {
     );
 }
 
-export default Projects;
+export default Works;

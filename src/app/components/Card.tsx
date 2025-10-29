@@ -20,7 +20,7 @@ const Card = ({ title = card_details.DEFAULT_CARD.TITLE, description = card_deta
                         <Image src={imageUrl} alt="Project Image" width={300} height={150} className="w-full h-full object-cover rounded-lg" />
                     </a>
                 </div>
-                <p className="h-20 text-gray-700 bg-gray-100 p-4 rounded">{description}</p>
+                <p className="h-30 text-gray-700 bg-gray-100 p-4 rounded">{description}</p>
             </div>
             <div className="border-t-1 border-gray-300 text-xs text-gray-500 pt-3">
                 <a href={githubUrl} className="text-blue-600 hover:underline">

@@ -3,7 +3,7 @@ import { CardDetails, Constants } from "./definitions";
 export const constants: Constants = {
     HOME_URL: "/",
     ABOUT_URL: "/about",
-    PROJECTS_URL: "/projects",
+    WORKS_URL: "/works",
     CONTACT_URL: "/contact",
     POSTS_URL: "/posts",
     GITHUB_URL: "https://github.com/dwinslow123",
@@ -20,7 +20,7 @@ export const card_details: CardDetails = {
         GITHUB_URL: "https://github.com/dwinslow123/villaOriginals",
         CARD_IMAGE: "https://g5gi6ozjbngbtteo.public.blob.vercel-storage.com/villa_originals.png",
         TITLE: "Villa Originals",
-        DESCRIPTION: "Site made for a local hair salon"
+        DESCRIPTION: "Site made for a local hair salon. (currently in a redesign phase) Using Next.js and Tailwind CSS as well as my contact form on the contact page."
     },
     DEFAULT_CARD: {
         URL: "https://danwinslow.dev",
@@ -34,6 +34,13 @@ export const card_details: CardDetails = {
         GITHUB_URL: "https://github.com/dwinslow123/tailwind_card_component",
         CARD_IMAGE: "https://g5gi6ozjbngbtteo.public.blob.vercel-storage.com/card_cover.png",
         TITLE: "Tailwind CSS Card",
-        DESCRIPTION: "A card component built with Tailwind CSS"
-    }
+        DESCRIPTION: "A card component built with Tailwind CSS, used to display project information."
+    },
+    CONTACT_FORM_CARD: {
+        URL: "https://contact-form-demo-aa2gc5qqo-dwinslow123s-projects.vercel.app/",
+        GITHUB_URL: "https://github.com/dwinslow123/contact_form_demo",
+        CARD_IMAGE: "https://g5gi6ozjbngbtteo.public.blob.vercel-storage.com/contact_form_demo.png",
+        TITLE: "Contact Form",
+        DESCRIPTION: "A contact form demo built with Next.js and Nodemailer to send emails. Demo is functional."
+    },
 }

@@ -4,10 +4,10 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const Nav = () => {
-    const [, pathname] = usePathname().split("/");
+    const [ , pathname ] = usePathname().split("/");
     const links = [
         { name: "DW", href: constants.HOME_URL },
-        { name: "Projects", href: constants.PROJECTS_URL },
+        { name: "Works", href: constants.WORKS_URL },
         { name: "Thoughts", href: constants.POSTS_URL },
         { name: "About", href: constants.ABOUT_URL },
     ];
@@ -30,10 +30,9 @@ const Nav = () => {
                                 text-sm
                                 font-medium
                                 transition-all
-                                ${
-                                    (link.href.includes(pathname) && pathname !== "") || (link.href === constants.HOME_URL && pathname === "")
-                                        ? "bg-gray-900 text-white"
-                                        : "text-gray-600 hover:bg-gray-100 hover:text-gray-900"
+                                ${(link.href.includes(pathname) && pathname !== "") || (link.href === constants.HOME_URL && pathname === "")
+                                    ? "bg-gray-900 text-white"
+                                    : "text-gray-600 hover:bg-gray-100 hover:text-gray-900"
                                 }
                             `}
                             role="tab"
@@ -47,7 +46,7 @@ const Nav = () => {
             </ul>
             <div className="border-solid border-1 w-full border-gray-200"></div>
         </div>
-        );
+    );
 }
 
 export default Nav;
