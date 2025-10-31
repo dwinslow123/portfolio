@@ -15,7 +15,7 @@ const Card = ({ title = card_details.DEFAULT_CARD.TITLE, description = card_deta
                 <p className="text-gray-800 w-full">{title}</p>
             </div>
             <div className="flex flex-col gap-2">
-                <div className="border border-gray-300 rounded-lg h-45 hover:transform hover:scale-95 transition-transform duration-300 ease-in-out overflow-hidden">
+                <div className="border border-gray-300 rounded-lg h-45 hover:transform hover:opacity-75 hover:scale-95 transition-transform duration-300 ease-in-out overflow-hidden">
                     <a href={link} className="block w-full h-full">
                         <Image src={imageUrl} alt="Project Image" width={300} height={150} className="w-full h-full object-cover rounded-lg" />
                     </a>
