@@ -5,7 +5,7 @@ import GithubLogo from "./components/GithubLogo";
 import ProjectFooter from "./components/ProjectFooter";
 
 const ProjectDetails = async ({ params }: { params: { id: string } }) => {
-    const { id } = await params;
+    const { id }: { id: string } = await params;
     const project = await findProjectById(id);
     const projectFeatures = project.features.split(',').map((feature: string) => feature.trim());
 

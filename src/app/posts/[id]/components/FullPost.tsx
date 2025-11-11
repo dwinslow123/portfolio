@@ -8,13 +8,6 @@ interface FullPostProps {
     id: number;
 };
 
-interface MarkdownCodeProps {
-    ReactNode: any;
-    inline: boolean;
-    className: string;
-    children: React.ReactNode;
-}
-
 const FullPost = async ({ id }: FullPostProps) => {
     const post = await findPostById(id);
 
