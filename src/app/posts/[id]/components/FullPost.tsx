@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { findPostById } from "@/app/lib/data";
-import MarkdownRenderer from "./MarkdownRenderer";
+import MarkdownRenderer from "../../../components/MarkdownRenderer";
 import style from "./FullPost.module.css";
 
 

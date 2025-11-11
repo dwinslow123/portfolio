@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head />
-      <body className="font-sans w-full grid grid-rows-[1rem_1fr_1rem] min-h-screen p-3 sm:p-6 gap-8 sm:gap-16">
+      <body className="font-sans w-full grid grid-rows-[1rem_1fr_1rem] min-h-screen p-8 sm:p-2 gap-8 sm:gap-16">
         <Nav />
         {children}
         <Footer />

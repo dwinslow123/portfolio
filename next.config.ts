@@ -21,18 +21,15 @@ const nextConfig: NextConfig = {
     "react-syntax-highlighter",
     "ui",
   ],
-  // experimental: {
-  //   authInterrupts: true,
-  // },
-  // async redirects() {
-  //   return [
-  //     {
-  //       source: '/posts',
-  //       destination: '/maintenance',
-  //       permanent: false,
-  //     }
-  //   ]
-  // }
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.svg$/i,
+      issuer: /\.[jt]sx?$/,
+      use: [ '@svgr/webpack' ],
+    });
+
+    return config;
+  },
 };
 
 export default nextConfig;
