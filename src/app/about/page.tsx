@@ -19,7 +19,7 @@ const About = () => {
                 </Link>
             </header>
             <div className="border-b-2 border-gray-200 row-start-2 w-full"></div>
-            <section className="row-start-3 flex flex-col gap-8 sm:gap-16 w-full max-w-3xl mx-auto">
+            <section className="row-start-3 flex flex-col gap-8 sm:gap-16 w-full sm:w-7/12 pl-50 sm:mx-auto sm:pl-0">
                 <div>
                     <h2 className="text-2xl sm:text-3xl font-bold mb-4">Skills & Technologies</h2>
                     <ul className="list-disc list-inside text-gray-700">

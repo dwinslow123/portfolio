@@ -21,7 +21,7 @@ const ProjectDetails = async ({ params }: ProjectDetailsProps) => {
             <div className="w-full flex flex-col items-center">
                 <Image className="mb-4 rounded-lg flex items-center justify-center border-1 border-gray-300" src={project.imageurl} alt={project.title} width={600} height={400} />
                 <div className="flex flex-col gap-4 md:flex-row w-full items-center">
-                    <div className="mt-4 flex flex-1 flex-row width-full items-center border-gray-300 gap-4">
+                    <div className="mt-4 flex flex-1 flex-col sm:flex-row w-full items-center border-gray-300 gap-4">
                         <button className="rounded-lg bg-gray-900 px-4 py-2 hover:bg-blue-700 transition-all duration-200 ease-in-out w-45">
                             <a className="text-gray-100" href={project.demourl}>Visit Project &#x2197;</a>
                         </button>

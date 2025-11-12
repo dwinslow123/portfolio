@@ -6,8 +6,8 @@ import { constants } from "@/app/lib/constants";
 const Home = () => {
 
   return (
-    <div className="row-start-2 flex flex-col gap-8 sm:gap-16 w-full max-w-8xl mx-auto p-8">
-      <header className="flex flex-col gap-4 sm:gap-2 w-full mx-auto pl-20 sm:pl-50">
+    <div className="row-start-2 flex flex-col gap-8 sm:gap-16 w-full max-w-8xl mx-auto">
+      <header className="flex flex-col gap-4 sm:gap-2 w-full mx-auto sm:pl-50">
         <h1 className="text-4xl text-gray-900 sm:text-5xl font-extrabold text-left w-full sm:w-7/12">
           Dan Winslow
         </h1>
