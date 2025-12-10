@@ -15,7 +15,7 @@
     "marked": "^16.4.1",
     "marked-more-lists": "^1.0.0",
     "marked-react": "^3.0.2",
-    "next": "15.5.5",
+    "next": "15.5.7",
     "next-auth": "5.0.0-beta.29",
     "react": "19.2.0",
     "react-dom": "19.2.0",
