@@ -16,11 +16,11 @@ export const constants: Constants = {
 
 export const card_details: CardDetails = {
     VILLA_ORIGINALS: {
-        URL: "https://villa-originals-en7w.vercel.app/",
+        URL: "https://villaoriginals.com",
         GITHUB_URL: "https://github.com/dwinslow123/villaOriginals",
         CARD_IMAGE: "https://g5gi6ozjbngbtteo.public.blob.vercel-storage.com/villa_originals.png",
         TITLE: "Villa Originals",
-        DESCRIPTION: "Site made for a local hair salon. (currently in a redesign phase) Using Next.js and Tailwind CSS as well as my contact form on the contact page."
+        DESCRIPTION: "Site made for a local hair salon. Using Next.js and Tailwind CSS as well as my contact form on the contact page."
     },
     DEFAULT_CARD: {
         URL: "https://danwinslow.dev",
