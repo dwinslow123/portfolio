@@ -49,4 +49,11 @@ export type CardDetails = {
         TITLE: string;
         DESCRIPTION: string;
     };
+    JOYWIN_DIGITAL: {
+        URL: string;
+        GITHUB_URL?: string;
+        CARD_IMAGE: string;
+        TITLE: string;
+        DESCRIPTION: string;
+    };
 }

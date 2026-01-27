@@ -6,7 +6,8 @@ const ProjectsList = () => {
     const projectDetails = [
         { ID: 1, ...card_details.VILLA_ORIGINALS },
         { ID: 2, ...card_details.TAILWIND_CARD },
-        { ID: 3, ...card_details.CONTACT_FORM_CARD }
+        { ID: 3, ...card_details.CONTACT_FORM_CARD },
+        { ID: 4, ...card_details.JOYWIN_DIGITAL },
     ];
     return (
         <div className="w-full mx-auto my-8 max-w-6xl px-4">

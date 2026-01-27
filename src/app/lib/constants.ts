@@ -11,7 +11,7 @@ export const constants: Constants = {
     RESUME_URL: "https://g5gi6ozjbngbtteo.public.blob.vercel-storage.com/dan_winslow.pdf",
     MAINTENANCE_URL: "https://g5gi6ozjbngbtteo.public.blob.vercel-storage.com/maintenance.png",
     CONTACT_EMAIL: "mailto:dan@danwinslow.dev",
-    PAGE_NOT_FOUND_IMAGE: "https://g5gi6ozjbngbtteo.public.blob.vercel-storage.com/404_error.png"
+    PAGE_NOT_FOUND_IMAGE: "https://g5gi6ozjbngbtteo.public.blob.vercel-storage.com/404_error.png",
 }
 
 export const card_details: CardDetails = {
@@ -43,4 +43,10 @@ export const card_details: CardDetails = {
         TITLE: "Contact Form",
         DESCRIPTION: "A contact form demo built with Next.js and Nodemailer to send emails. Demo is functional."
     },
+    JOYWIN_DIGITAL: {
+        URL: "https://joywin.digital",
+        CARD_IMAGE: "https://g5gi6ozjbngbtteo.public.blob.vercel-storage.com/joywin_digital.png",
+        TITLE: "Joywin Digital",
+        DESCRIPTION: "A website made for a digital marketing agency. Built with Vite.",
+    }
 }

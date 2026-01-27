@@ -7,10 +7,10 @@ interface CardProps {
     description: string;
     imageUrl: string;
     link: string;
-    githubUrl: string;
+    githubUrl?: string;
 }
 /** A simple card component to display project information */
-const Card = ({ title = card_details.DEFAULT_CARD.TITLE, description = card_details.DEFAULT_CARD.DESCRIPTION, imageUrl = card_details.DEFAULT_CARD.CARD_IMAGE, githubUrl = card_details.DEFAULT_CARD.GITHUB_URL, id = 1 }: CardProps) => {
+const Card = ({ title = card_details.DEFAULT_CARD.TITLE, description = card_details.DEFAULT_CARD.DESCRIPTION, imageUrl = card_details.DEFAULT_CARD.CARD_IMAGE, githubUrl, id = 1 }: CardProps) => {
     return (
         <div className="border border-gray-300 rounded-lg p-4 flex flex-col gap-4 w-full bg-white shadow-xl bottom-shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out">
             <div className="bg-gray-100 text-2xl font-bold p-3 rounded flex">
@@ -24,11 +24,11 @@ const Card = ({ title = card_details.DEFAULT_CARD.TITLE, description = card_deta
                 </div>
                 <p className="h-40 text-gray-700 bg-gray-100 p-4 rounded">{description}</p>
             </div>
-            <div className="border-t-1 border-gray-300 text-xs text-gray-500 pt-3">
+            {githubUrl && <div className="border-t border-gray-300 text-xs text-gray-500 pt-3">
                 <a href={githubUrl} className="text-blue-600 hover:underline">
                     Source Code
                 </a>
-            </div>
+            </div>}
         </div>
 
     )
